@@ -7846,8 +7846,6 @@ WHERE firms.IsActive = 1<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="ce
 	LEFT JOIN dbo.BenefitProgramFirms as benefit ON docs.Firm_ID = benefit.Firm_ID
 	WHERE firms.IsActive = 1
 )
-
-
 SELECT 
     IsInBenefitProgram,
     AVG(TotalPriceExclVat) as AvgPurchaseValue,
@@ -7858,7 +7856,7 @@ SELECT
 FROM 
     BenefitProgramData
 GROUP BY 
-    IsInBenefitProgram;enefitProgram;<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=cdccee34-540a-4d12-8952-9b4dd8d231e2">
+    IsInBenefitProgram;<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=cdccee34-540a-4d12-8952-9b4dd8d231e2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9628,8 +9626,7 @@ SELECT
 FROM 
     PurchasesSummary
 GROUP BY 
-    IsInBenefitProgram
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9545b16e-66e2-4e39-bc34-4be5035ea61b">
+    IsInBenefitProgram;<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9545b16e-66e2-4e39-bc34-4be5035ea61b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
